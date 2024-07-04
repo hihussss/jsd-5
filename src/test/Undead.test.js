@@ -1,5 +1,7 @@
+/* eslint-disable no-undef */
+
 import { Undead } from '../class/Undead.js'
-import {test, expect} from '@jest/globals'
+
 
 
 test('Правильно создается персонаж',() => {

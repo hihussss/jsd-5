@@ -1,5 +1,7 @@
+/* eslint-disable no-undef */
+
 import { Magician } from '../class/Magician.js'
-import {test, expect} from '@jest/globals'
+
 
 
 test('Правильно создается персонаж',() => {

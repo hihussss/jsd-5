@@ -1,5 +1,5 @@
 import { Bowman } from "../class/Bowman.js";
-import { Character } from "../class/character.js";
+import { Character } from "../class/Character.1.js";
 
 import {test, expect,} from '@jest/globals';
 
@@ -15,7 +15,7 @@ test('Ошибка в name', () => {
 })
 
 test('Ошибка в type', () => {
-    expect(() => new Character('Лучник', 'B')).toThrow('тип персонажа должен быть одним из следующих: Bowman, Swordsman, Magician, Daemon, Undead, Zombie')
+    expect(() => new Character('Лучник', 'B')).toThrow('тип персонажа должен быть одним из следующих:Bowman, Swordsman, Magician, Daemon, Undead, Zombie')
 })
 
 
@@ -28,8 +28,7 @@ test('leveliper', () => {
 test('DeadLevelUp', () => {
     const result = new Bowman('Лучник', 'Bowman')
     result.health = 0
-    result.levelUp()
-    expect(result).toThrow()
+    expect(() => {result.levelUp()}).toThrow()
 })
 
 test('damage', () => {
@@ -41,6 +40,5 @@ test('damage', () => {
 test('DeadDamage', () => {
     const result = new Bowman('Лучник', 'Bowman')
     result.health = 0
-    result.damage(10)
-    expect(result).toThrow()
+    expect(() => {result.damage(10)}).toThrow()
 })

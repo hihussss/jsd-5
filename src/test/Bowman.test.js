@@ -1,5 +1,6 @@
+/* eslint-disable no-undef */
 import { Bowman } from '../class/Bowman.js'
-import {test, expect} from '@jest/globals'
+
 
 
 test('Правильно создается персонаж',() => {

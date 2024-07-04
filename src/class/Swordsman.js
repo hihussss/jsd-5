@@ -1,4 +1,4 @@
-import {Character} from './character.js'
+import { Character } from "./Character.1.js"
 
 export class Swordsman extends Character {
     constructor (name,type) {
